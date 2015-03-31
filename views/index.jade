@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to Cavalcade
+
+    // Wrapper
+    #wrapper
+
+        // QUEST INFO
+        #questInfo
+            h2 Quest Info
+            p
+                strong Quest Name:
+                |  <span id='questInfoName'></span>
+                br
+                strong Requirements:
+                |  <span id='questInfoRequirements'></span>
+                br
+                strong Experience:
+                |  <span id='questInfoExperience'></span>
+                br
+                strong Latitude:
+                |  <span id='questInfoLatitude'></span>
+                br
+                strong Longitude:
+                |  <span id='questInfoLongitude'></span>
+                br
+                strong Public:
+                |  <span id='questInfoPublic'></span>
+                br
+                strong Tags:
+                |  <span id='questInfoTags'></span>
+        // /QUEST INFO
+
+        // QUEST LIST
+        h2 Quest List
+        #questList
+            table
+                thead
+                    th Quest Name
+                    th Experience
+                    th Delete?
+                tbody
+        // /QUEST LIST
+
+    // /WRAPPER
